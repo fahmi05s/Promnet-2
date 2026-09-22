@@ -1,105 +1,118 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
 
 <head>
     <meta charset="UTF-8" />
-    <title>Fahmi Sa-u Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fahmi Sa-u Website - Contact</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <h1>Personal Website</h1>
-    <p>Selamat Datang di Website Pribadi Saya!</p>
+    <header class="header">
+       <nav class="personal">
+            <h1>Personal Website</h1>
+            <p class="welcome">Selamat Datang | ยินดีต้อนรับ | أهلاً وسهلاً<br> Website Pribadi Fahmi !</p>
+        </nav>
+        <nav class="main-navbar">
+            <a href="index.html"class=nav>Home</a> 
+            <a href="about.html"class=nav>About</a>
+            <a href="project.html"class=nav>Project</a>  
+            <a href="contact.html"class=nav-active>Contact</a>  
+            <a href="galeri.html"class=nav>Galeri</a>
+        </nav>
+    </header>
+
+    <hr />
+
+    <main class="isi">
+        <h2>Informasi Kontak</h2>
+        <p>
+            Jika anda ingin berdiskusi atau bekerja sama, silahkan menghubungi saya lewat form berikut.<br />
+            Anda juga dapat mengirim Email ke
+            <a href="mailto:fahmichaiya.th@gmail.com">fahmichaiya.th@gmail.com</a>
+        </p>
+    </main>
+    
+    <main class="isi">
+        <h2>Form Pesan</h2>
+
+        <form>
+            <table border="1" cellpadding="10" cellspacing="0" style="width: 50%; border-collapse: collapse; margin: 10px auto;">
+                <tr>
+                    <td class="label">Nama :</td>
+                    <td class="input">
+                        <input type="text" name="nama" style="width: 350px" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">Email :</td>
+                    <td class="input">
+                        <input type="email" name="email" style="width: 250px" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">Nomor Telepon :</td>
+                    <td class="input">
+                        <input type="tel" name="nomor_telepon" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">Jenis Kelamin :</td>
+                    <td>
+                        <input type="radio" name="jk" value="L" id="jk_l" /><label for="jk_l">Laki-laki</label>
+                        <input type="radio" name="jk" value="P" id="jk_p" /><label for="jk_p">Perempuan</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">Tanggal Lahir :</td>
+                    <td>
+                        <input type="date" name="tanggal_lahir" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">Topik Pesan :</td>
+                    <td>
+                        <select name="topik_pesan">
+                            <option value="">-- Pilih Topik --</option>
+                            <option value="Diskusi">Diskusi</option>
+                            <option value="kerjasama">Kerjasama</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">Pesan :</td>
+                    <td class="textarea">
+                        <textarea name="pesan" rows="5" cols="33"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">Salinan Pesan :</td>
+                    <td>
+                        <input type="checkbox" name="salinan_pesan" value="1" id="salinan" />
+                        <label for="salinan">Kirim salinan pesan ke email saya</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center">
+                        <input type="submit" value="Kirim Pesan" />
+                        <input type="reset" value="Reset" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+        <p><em>Catatan: karena website ini hanya menggunakan HTML, form belum terhubung ke server/database</em></p>
+    </main>
+
+    <hr />
+
+    <footer>
+        <nav>
+            <a href="index.html">Kembali Ke Home</a>
+        </nav>
+        <p>© 2026 Fahmi Sa-u.</p>
+    </footer>
 </body>
 
 </html>
-<nav>
-    <a href="index.html">Home</a> | <a href="about.html">About</a> |
-    <a href="project.html">Project</a> | <a href="contact.html">Contact</a>
-    <a href="Galeri.html">Galeri</a> 
-</nav>
-<hr>
-
-<h2>Informasi Kontak</h2>
-<p>
-    Jika anda ingin berdiskusi atau bekerja sama, silahkan menghubungi saya lewat
-    form berikut.<br />
-    Anda juga dapat mengirim Email ke
-    <a
-        href="https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=fahmichaiya.th@gmail.com">fahmichaiya.th@gmail.com</a>
-</p>
-
-<h2>Form Pesan</h2>
-
-<form>
-    <table border="3" cellspacing="0" cellpading="10" border="1px solid" width="50%"
-        style="border-collapse: collapse; margin: 10 auto">
-        <tr>
-            <td class="label">Nama :</td>
-            <td class="input">
-                <input type="text" name="nama" style="width: 350px" />
-            </td>
-        </tr>
-        <tr>
-            <td class="label">Email :</td>
-            <td class="input">
-                <input type="text" name="email" style="width: 250px" />
-            </td>
-        </tr>
-        <tr>
-            <td class="label">Nomor Telepon :</td>
-            <td class="input"><input type="text" name="nomor telepon" /></td>
-        </tr>
-        <tr>
-            <td class="label">Jenis Kelamin :</td>
-            <td>
-                <input type="radio" name="jk" value="L" />Laki-laki
-                <input type="radio" name="jk" value="P" />Perempuan
-            </td>
-        </tr>
-        <tr>
-            <td class="label">Tanggal Lahir :</td>
-            <td><input type="date" /></td>
-        </tr>
-        <tr>
-            <td class="label">Topik Pesan :</td>
-            <td>
-                <select name="topik pesan">
-                    <option></option>
-                    <option value="Diskusi">Diskusi</option>
-                    <option value="kerjasama">Kerjasama</option>
-                </select>
-            </td>
-        </tr>
-        <tr>
-            <td class="label">Pesan :</td>
-            <td class="textarea">
-                <textarea name="pesan" rows="5" cols="33"></textarea>
-            </td>
-        </tr>
-        <tr>
-            <td class="label">Salinan Pesan :</td>
-            <td>
-                <input type="checkbox" name="Salinan Pesan" value="Kirim salinan pesan ke email saya" />Kirim salinan
-                pesan ke email saya
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2" style="text-align: center">
-                <input type="submit" value="Kirim Pesan" />
-                <input type="reset" value="Reset" />
-            </td>
-        </tr>
-    </table>
-</form>
-
-
-<p><em>Catatan: karena website ini hanya menggunakan HTML, form belum terhubung ke server/database</em></p>
-
-<hr />
-
-
-
-<nav>
-    <a href="index.html">Kembali Ke Home</a>
-</nav>
-<p>© 2026 Fahmi Sa-u, Dibuat menggunakan HTML.</p>

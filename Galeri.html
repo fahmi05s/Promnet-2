@@ -2,48 +2,61 @@
 <html lang="id">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Galeri</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fahmi Sa-u Website - Galeri</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <h1>Personal Website</h1>
-    <p>Selamat Datang di Website Pribadi Saya!</p>
+    <header class="header">
+        <nav class="personal">
+            <h1>Personal Website</h1>
+            <p class="welcome">Selamat Datang | ยินดีต้อนรับ | أهلاً وسهلاً<br> Website Pribadi Fahmi !</p>
+        </nav>
+        <nav class="main-navbar">
+            <a href="index.html"class=nav>Home</a> 
+            <a href="about.html"class=nav>About</a> 
+            <a href="project.html"class=nav>Project</a> 
+            <a href="contact.html"class=nav>Contact</a> 
+            <a href="galeri.html"class=nav-active>Galeri</a>
+        </nav>
+    </header>
 
-    <nav>
-        <a href="index.html">Home</a> | 
-        <a href="about.html">About</a> |
-        <a href="project.html">Project</a> | 
-        <a href="contact.html">Contact</a> | 
-        <a href="Galeri.html">Galeri</a> 
-    </nav>
-    <hr>
+    <hr />
 
+    <main class="isi">
     <h2>Galeri Foto</h2>
 
-    <table border="0" cellpadding="5" cellspacing="5">
-        <tr>
-            <td><img src="Assest/rayahippi.jpeg" alt="Galeri Foto 1" width="250"></td>
-            <td><img src="Assest/pwk1.jpeg" alt="Galeri Foto 2" width="250"></td>
-            <td><img src="Assest/test.jpeg" alt="Galeri Foto 3" width="250"></td>
-        </tr>
-        <tr>
-            <td><img src="Assest/bandung.jpeg" alt="Galeri Foto 4" width="250"></td>
-            <td><img src="Assest/tanga.jpeg" alt="Galeri Foto 5" width="250"></td>
-            <td><img src="Assest/wisu.jpeg" alt="Galeri Foto 6" width="250"></td>
-        </tr>
-        <tr>
-            <td><img src="Assest/wisulari.jpeg" alt="Galeri Foto 7" width="250"></td>
-            <td><img src="Assest/fahib.jpeg" alt="Galeri Foto 8" width="250"></td>
-            <td><img src="Assest/boo.jpeg" alt="Galeri Foto 9" width="250"></td>
-        </tr>
-        <tr>
-            <td><img src="Assest/chamit.jpeg" alt="Galeri Foto 10" width="250"></td>
-            <td><img src="Assest/chaya.jpeg" alt="Galeri Foto 11" width="250"></td>
-            <td><img src="Assest/kame.jpeg" alt="Galeri Foto 12" width="250"></td>
-        </tr>
-    </table>
+    <!-- เปลี่ยนจาก table มาใช้ div.gallery-grid -->
+    <div class="gallery-grid">
+        <div class="gallery-item"><img src="Assest/rayahippi.jpeg" alt="Galeri Foto 1"></div>
+        <div class="gallery-item"><img src="Assest/pwk1.jpeg" alt="Galeri Foto 2"></div>
+        <div class="gallery-item"><img src="Assest/test.jpeg" alt="Galeri Foto 3"></div>
+        <div class="gallery-item"><img src="Assest/bandung.jpeg" alt="Galeri Foto 4"></div>
+        <div class="gallery-item"><img src="Assest/tanga.jpeg" alt="Galeri Foto 5"></div>
+        <div class="gallery-item"><img src="Assest/wisu.jpeg" alt="Galeri Foto 6"></div>
+        <div class="gallery-item"><img src="Assest/wisulari.jpeg" alt="Galeri Foto 7"></div>
+        <div class="gallery-item"><img src="Assest/fahib.jpeg" alt="Galeri Foto 8"></div>
+        <div class="gallery-item"><img src="Assest/boo.jpeg" alt="Galeri Foto 9"></div>
+        <div class="gallery-item"><img src="Assest/chamit.jpeg" alt="Galeri Foto 10"></div>
+        <div class="gallery-item"><img src="Assest/chaya.jpeg" alt="Galeri Foto 11"></div>
+        <div class="gallery-item"><img src="Assest/kame.jpeg" alt="Galeri Foto 12"></div>
+        <div class="gallery-item"><img src="Assest/naratat.jpeg" alt="Galeri Foto 13"></div>
+        <div class="gallery-item"><img src="Assest/chaya2.jpeg"Galeri Foto 14"></div>
+        <div class="gallery-item"><img src="Assest/melayu raya.jpeg" alt="Galeri Foto 15"></div>
+        <div class="gallery-item"><img src="Assest/tanga.jpeg" alt="Galeri Foto 16"></div>
+        <div class="gallery-item"><img src="Assest/sukan.jpeg" alt="Galeri Foto 17"></div>
+        <div class="gallery-item"><img src="Assest/ME.jpg" alt="Galeri Foto 18"></div>
+        <div class="gallery-item"><img src="Assest/boo.jpeg" alt="Galeri Foto 19"></div>
+    </div>
+</main>
 
+    <hr />
+
+    <footer>
+        <p>© 2026 Fahmi Sa-u.</p>
+    </footer>
 </body>
 
 </html>
